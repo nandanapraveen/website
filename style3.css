@@ -1,0 +1,135 @@
+/* styles.css */
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+    background-color: #161515;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #ffffff;
+    background-color: #0b0808;
+}
+.edit-profile-btn {
+    background-color: #fff; /* White background */
+    color: #262626; /* Dark text color */
+    border: 1px solid #dbdbdb; /* Light grey border */
+    padding: 5px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Button Hover Effect */
+.edit-profile-btn:hover {
+    background-color: #f0f0f0; /* Slightly darker on hover */
+}
+
+.profile-header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.profile-details {
+    flex-grow: 1;
+}
+
+.profile-details h2 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.edit-profile-btn {
+    background-color: transparent;
+    border: 1px solid #dbdbdb;
+    padding: 5px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    margin: 15px 0;
+}
+
+.stat-number {
+    font-weight: bold;
+}
+
+.bio {
+    font-size: 14px;
+    color: #fdfdfd;
+}
+
+.profile-nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.profile-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-nav a {
+    text-decoration: none;
+    color: #bc5454;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.profile-content {
+    padding: 20px;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.post {
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    position: relative;
+}
+
+.post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.post:hover img {
+    transform: scale(1.05);
+}
